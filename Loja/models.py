@@ -17,7 +17,7 @@ class Cliente(models.Model):
                             null=False, default=uuid.uuid4, unique=True)
 
     def __str__(self):
-        return self.guid
+        return self.nome
 
 
 class Vendedor(models.Model):
@@ -35,7 +35,7 @@ class Vendedor(models.Model):
                             null=False, default=uuid.uuid4, unique=True)
 
     def __str__(self):
-        return self.guid
+        return self.nome
 
 
 class Produto(models.Model):
@@ -50,4 +50,4 @@ class Produto(models.Model):
                             null=False, default=uuid.uuid4, unique=True)
 
     def __str__(self):
-        return self.guid
+        return self.nome
